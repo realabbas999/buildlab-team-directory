@@ -1,331 +1,366 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Discover BuildLab's mission, values, and approach to learning, collaboration, and building real software together.">
-  <title>About BuildLab | Beyond the Code</title>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BuildLab is a community where people learn software engineering, collaborate, and build real projects.">
+  <title>BuildLab — Learn. Build. Grow.</title>
 
   <link rel="stylesheet" href="css/style.css">
-  <script src="js/script.js" defer></script>
 </head>
 
-<body class="about-page">
-  <a class="skip-link" href="#main-content">Skip to content</a>
+<body>
 
-  <!-- Shared BuildLab navigation -->
-  <header class="bl-header">
-    <div class="bl-container bl-header__inner">
-      <a class="bl-logo" href="index.html" aria-label="BuildLab home">
-        <img src="assets/images/BUILD LAB LOGO.png" alt="BuildLab — Learn Together. Build Together.">
+  <!-- NAVIGATION -->
+  <header>
+    <div class="container navbar">
+      <a href="#home" class="logo" aria-label="BuildLab home">
+        Build<span>Lab</span>.
       </a>
 
-      <button class="bl-menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
-        <span class="sr-only">Open navigation</span>
-        <span></span><span></span><span></span>
+      <button
+        class="menu-toggle"
+        id="menu-toggle"
+        aria-label="Open navigation"
+        aria-expanded="false"
+        aria-controls="main-navigation"
+        type="button">
+        ☰
       </button>
 
-      <nav class="bl-nav" id="primary-navigation" aria-label="Primary navigation">
-        <a class="bl-nav__link" href="index.html">Home</a>
-        <a class="bl-nav__link is-active" href="about.html" aria-current="page">About</a>
-        <a class="bl-nav__link" href="projects.html">Projects</a>
-        <a class="bl-nav__link" href="team.html">Team</a>
-        <a class="bl-nav__link" href="join.html">Join</a>
-        <a class="bl-button bl-button--nav" href="join.html">Sign In</a>
+      <nav class="nav-links" id="main-navigation" aria-label="Main navigation">
+        <a href="#home" class="active">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#team">Team</a>
+        <a href="#join">Join</a>
+        <a href="#join" class="btn btn-primary">Join the Lab ↗</a>
       </nav>
     </div>
   </header>
 
-  <main id="main-content">
-    <!-- Hero -->
-    <section class="about-hero bl-section" id="about-home">
-      <div class="bl-container about-hero__grid">
-        <div class="about-hero__content">
-          <p class="bl-kicker">Inside the BuildLab universe</p>
+  <main>
+
+    <!-- HOME SECTION -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+
+        <div>
+          <p class="eyebrow">Learn together. Build together.</p>
 
           <h1>
-            More Than a<br>
-            <span>Community.</span><br>
-            A Movement.
+            Turn your curiosity into
+            <span>real skills.</span>
           </h1>
 
-          <p class="about-hero__description">
-            We bring curious minds, creative thinkers, and problem
-            solvers together to learn, collaborate, and build real
-            solutions for a better tomorrow.
+          <p>
+            BuildLab is a practical software engineering community
+            where learners share knowledge, collaborate on projects,
+            and grow by building things that matter.
           </p>
 
-          <div class="about-hero__actions">
-            <a class="bl-button bl-button--primary" href="#about-mission">
-              Discover our mission <span aria-hidden="true">↗</span>
+          <div class="hero-actions">
+            <a href="#join" class="btn btn-primary">
+              Join the Lab ↗
             </a>
-            <a class="bl-button bl-button--secondary" href="#about-story">
-              Explore our story
+
+            <a href="#about" class="btn btn-secondary">
+              Discover our approach ↓
             </a>
           </div>
+        </div>
 
-          <p class="about-hero__note">
-            Imagine it. Build it. Impact the world.
+        <div class="code-card" aria-label="Example code illustration">
+          <div class="code-top">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+
+          <pre><span class="code-blue">const</span> community = {
+  name: <span class="code-green">"BuildLab"</span>,
+  learn: <span class="code-yellow">true</span>,
+  build: <span class="code-yellow">true</span>,
+  grow: <span class="code-yellow">true</span>
+};
+
+<span class="code-blue">function</span> createFuture() {
+  <span class="code-blue">return</span> skills + practice;
+}</pre>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- APPROACH SECTION -->
+    <section id="approach">
+      <div class="container">
+
+        <div class="section-heading">
+          <p class="eyebrow">The BuildLab approach</p>
+          <h2>Learn by doing, not just watching.</h2>
+          <p>
+            Technology becomes easier to understand when you practise,
+            experiment, ask questions, and work with other learners.
           </p>
         </div>
 
-        <div class="about-universe" aria-hidden="true">
-          <div class="about-universe__orbit about-universe__orbit--one"></div>
-          <div class="about-universe__orbit about-universe__orbit--two"></div>
-          <div class="about-universe__planet about-universe__planet--one"></div>
-          <div class="about-universe__planet about-universe__planet--two"></div>
+        <div class="cards">
 
-          <div class="about-universe__portal">
-            <span>✳</span>
-          </div>
+          <article class="card">
+            <div class="card-icon">📚</div>
+            <h3>Learn the fundamentals</h3>
+            <p>
+              Build your understanding of programming, web development,
+              software engineering, and useful technical concepts.
+            </p>
+          </article>
 
-          <div class="about-universe__code">
-            <span>THE PROCESS</span>
-            <code>&lt;idea /&gt;</code>
-            <code>&lt;build /&gt;</code>
-            <code>&lt;impact /&gt;</code>
-          </div>
+          <article class="card">
+            <div class="card-icon">🛠️</div>
+            <h3>Build real projects</h3>
+            <p>
+              Apply what you learn by creating websites, applications,
+              tools, and other practical projects.
+            </p>
+          </article>
 
-          <div class="about-universe__vision">
-            <span>✦</span>
-            <p>Small ideas.</p>
-            <strong>Infinite possibilities.</strong>
-          </div>
+          <article class="card">
+            <div class="card-icon">🤝</div>
+            <h3>Grow together</h3>
+            <p>
+              Share ideas, learn from mistakes, exchange feedback,
+              and improve through collaboration.
+            </p>
+          </article>
 
-          <p class="about-universe__caption">A space for what's next</p>
-        </div>
-      </div>
-
-      <div class="about-principles">
-        <div class="bl-container about-principles__inner">
-          <span>Make real things</span>
-          <span aria-hidden="true">✳</span>
-          <span>Share what you learn</span>
-          <span aria-hidden="true">✳</span>
-          <span>Help others grow</span>
         </div>
       </div>
     </section>
 
-    <!-- Mission and values -->
-    <section class="bl-section about-mission" id="about-mission" aria-labelledby="about-mission-title">
-      <div class="bl-container">
-        <div class="about-section-heading">
-          <div>
-            <p class="bl-kicker">Why we exist</p>
-            <h2 id="about-mission-title">
-              Empowering the next generation of <span>builders.</span>
-            </h2>
-          </div>
+    <!-- ABOUT SECTION -->
+    <section class="about" id="about">
+      <div class="container about-grid">
+
+        <div>
+          <p class="eyebrow">About BuildLab</p>
+          <h2>A place to learn, experiment, and improve.</h2>
 
           <p>
-            BuildLab is where curiosity becomes capability. We create
-            an environment where people learn together, exchange ideas,
-            and turn their skills into meaningful projects.
-          </p>
-        </div>
-
-        <div class="about-mission__grid">
-          <article class="about-mission-card">
-            <div class="about-mission-card__top">
-              <span class="about-mission-card__icon" aria-hidden="true">⌘</span>
-              <span class="about-mission-card__number">01 / 03</span>
-            </div>
-            <p class="about-mission-card__label">Grow your mind</p>
-            <h3>Learn<br>Together.</h3>
-            <p class="about-mission-card__description">
-              Develop practical skills, explore new technologies, and
-              learn from people who are growing alongside you.
-            </p>
-            <span class="about-mission-card__foot">Knowledge is the start</span>
-          </article>
-
-          <article class="about-mission-card about-mission-card--green">
-            <div class="about-mission-card__top">
-              <span class="about-mission-card__icon" aria-hidden="true">◎</span>
-              <span class="about-mission-card__number">02 / 03</span>
-            </div>
-            <p class="about-mission-card__label">Ideas meet people</p>
-            <h3>Build<br>Together.</h3>
-            <p class="about-mission-card__description">
-              Share ideas, solve problems as a team, and discover how
-              collaboration makes ambitious ideas possible.
-            </p>
-            <span class="about-mission-card__foot">Better, as a team</span>
-          </article>
-
-          <article class="about-mission-card about-mission-card--light">
-            <div class="about-mission-card__top">
-              <span class="about-mission-card__icon" aria-hidden="true">&lt;/&gt;</span>
-              <span class="about-mission-card__number">03 / 03</span>
-            </div>
-            <p class="about-mission-card__label">Make it real</p>
-            <h3>Create<br>Impact.</h3>
-            <p class="about-mission-card__description">
-              Turn what you learn into real projects, solve meaningful
-              challenges, and build things that matter.
-            </p>
-            <span class="about-mission-card__foot">From idea to impact</span>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- How we learn -->
-    <section class="bl-section about-approach" aria-labelledby="about-approach-title">
-      <div class="bl-container">
-        <div class="about-approach__intro">
-          <p class="bl-kicker">The BuildLab approach</p>
-          <h2 id="about-approach-title">Learn by doing.<br><span>Grow by sharing.</span></h2>
-          <p>
-            Progress happens when learning goes beyond theory and
-            people work together to solve real problems.
-          </p>
-        </div>
-
-        <div class="about-approach__steps">
-          <article class="about-approach__step">
-            <span>01</span>
-            <div>
-              <h3>Explore</h3>
-              <p>Ask questions, discover tools, and develop the confidence to try.</p>
-            </div>
-          </article>
-
-          <article class="about-approach__step">
-            <span>02</span>
-            <div>
-              <h3>Collaborate</h3>
-              <p>Exchange ideas, learn from peers, and improve through feedback.</p>
-            </div>
-          </article>
-
-          <article class="about-approach__step">
-            <span>03</span>
-            <div>
-              <h3>Build</h3>
-              <p>Apply your skills to practical projects and meaningful challenges.</p>
-            </div>
-          </article>
-
-          <article class="about-approach__step">
-            <span>04</span>
-            <div>
-              <h3>Share</h3>
-              <p>Show your work, reflect on what you learned, and help others grow.</p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Our story -->
-    <section class="bl-section about-story" id="about-story" aria-labelledby="about-story-title">
-      <div class="bl-container about-story__grid">
-        <div class="about-story__visual" aria-hidden="true">
-          <div class="about-story__grid-lines"></div>
-          <div class="about-story__orb about-story__orb--outer">
-            <div class="about-story__orb about-story__orb--middle">
-              <div class="about-story__orb about-story__orb--inner">✳</div>
-            </div>
-          </div>
-
-          <div class="about-story__floating about-story__floating--one">
-            <span>01</span><p>Imagine</p>
-          </div>
-          <div class="about-story__floating about-story__floating--two">
-            <span>02</span><p>Experiment</p>
-          </div>
-          <div class="about-story__floating about-story__floating--three">
-            <span>03</span><p>Create</p>
-          </div>
-
-          <p class="about-story__caption">BL / 001 — The journey continues</p>
-        </div>
-
-        <div class="about-story__content">
-          <p class="bl-kicker">Our story</p>
-          <h2 id="about-story-title">
-            Every great thing starts with an <span>impossible idea.</span>
-          </h2>
-
-          <p>
-            The future doesn't build itself. It takes curious minds,
-            brave questions, and people willing to turn possibilities
-            into reality.
+            BuildLab is built around a simple idea: people become better
+            at software engineering by combining learning with practice.
           </p>
 
-          <p>
-            BuildLab is a space for that journey. We learn by doing,
-            grow by sharing, and become better builders by creating
-            things that matter — together.
+          <p style="margin-top: 15px;">
+            Whether you are taking your first steps in coding or
+            improving your existing skills, the goal is to keep learning
+            and turn knowledge into useful work.
           </p>
 
-          <div class="about-story__signature">
-            <span aria-hidden="true">✳</span>
-            <div>
-              <strong>The BuildLab philosophy</strong>
-              <p>Start curious. Keep building.</p>
-            </div>
-          </div>
-
-          <a class="bl-text-link" href="#about-home">
-            Back to the beginning <span aria-hidden="true">↑</span>
+          <a href="#approach" class="btn btn-primary" style="margin-top: 24px;">
+            Discover our approach ↗
           </a>
         </div>
+
+        <div class="about-panel">
+          <h3>Our mission</h3>
+          <p>
+            Make practical software engineering learning more
+            collaborative, accessible, and focused on building.
+          </p>
+
+          <ul class="about-points">
+            <li>Learn with purpose</li>
+            <li>Practise consistently</li>
+            <li>Share knowledge openly</li>
+            <li>Build useful projects</li>
+          </ul>
+        </div>
+
       </div>
     </section>
 
-    <!-- Closing call to action -->
-    <section class="about-closing" aria-labelledby="about-closing-title">
-      <div class="bl-container about-closing__inner">
-        <p class="bl-kicker">Your next chapter starts here</p>
-        <h2 id="about-closing-title">
-          Don't just watch the future. <span>Build it.</span>
-        </h2>
-        <p>
-          Bring your curiosity. Find your people.
-          Let's make something meaningful.
-        </p>
-        <a class="bl-button bl-button--primary" href="join.html">
-          Join the community <span aria-hidden="true">↗</span>
-        </a>
+    <!-- PROJECTS SECTION -->
+    <section class="projects" id="projects">
+      <div class="container">
+
+        <div class="section-heading">
+          <p class="eyebrow">What we build</p>
+          <h2>Ideas become projects.</h2>
+          <p>
+            Explore some example project areas that learners can use
+            to practise their skills. These are examples, not claims
+            about existing BuildLab projects.
+          </p>
+        </div>
+
+        <div class="cards">
+
+          <article class="card">
+            <span class="project-label">Web development</span>
+            <h3>Interactive websites</h3>
+            <p>
+              Practise HTML, CSS, JavaScript, responsive layouts,
+              and accessible user interfaces.
+            </p>
+            <a href="#join" class="text-link">Build with us ↗</a>
+          </article>
+
+          <article class="card">
+            <span class="project-label">Application development</span>
+            <h3>Useful applications</h3>
+            <p>
+              Explore application design, programming logic,
+              forms, data handling, and user experience.
+            </p>
+            <a href="#join" class="text-link">Build with us ↗</a>
+          </article>
+
+          <article class="card">
+            <span class="project-label">Backend development</span>
+            <h3>Systems and APIs</h3>
+            <p>
+              Learn how applications process requests, organise
+              data, and communicate with backend services.
+            </p>
+            <a href="#join" class="text-link">Build with us ↗</a>
+          </article>
+
+        </div>
       </div>
     </section>
+
+    <!-- TEAM SECTION -->
+    <section class="team" id="team">
+      <div class="container">
+
+        <div class="section-heading">
+          <p class="eyebrow">Our community</p>
+          <h2>Better learning happens together.</h2>
+          <p>
+            A community grows when learners contribute, ask questions,
+            share what they know, and help one another improve.
+          </p>
+        </div>
+
+        <div class="cards">
+
+          <article class="card team-card">
+            <div class="team-avatar">L</div>
+            <h3>Learners</h3>
+            <p>
+              People who are developing their skills and turning
+              new knowledge into practical experience.
+            </p>
+          </article>
+
+          <article class="card team-card">
+            <div class="team-avatar">B</div>
+            <h3>Builders</h3>
+            <p>
+              People who experiment, create projects, solve problems,
+              and learn from the process.
+            </p>
+          </article>
+
+          <article class="card team-card">
+            <div class="team-avatar">C</div>
+            <h3>Collaborators</h3>
+            <p>
+              People who exchange ideas, review work, and contribute
+              to a supportive learning environment.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- JOIN SECTION -->
+    <section class="join" id="join">
+      <div class="container join-layout">
+
+        <div>
+          <p class="eyebrow">Take the next step</p>
+          <h2>Ready to start building?</h2>
+
+          <p>
+            Start with curiosity, keep practising, and take your
+            next step in software engineering.
+          </p>
+
+          <ul class="join-benefits">
+            <li>Keep learning through practical work</li>
+            <li>Explore ideas with other learners</li>
+            <li>Develop projects for your portfolio</li>
+          </ul>
+        </div>
+
+        <form class="join-form" id="join-form">
+          <h3>Introduce yourself</h3>
+
+          <div class="form-group">
+            <label for="name">Your name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter your name"
+              required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Your email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+              required>
+          </div>
+
+          <div class="form-group">
+            <label for="interest">What interests you?</label>
+            <select id="interest" name="interest" required>
+              <option value="">Choose an area</option>
+              <option value="Web development">Web development</option>
+              <option value="App development">App development</option>
+              <option value="Backend development">Backend development</option>
+              <option value="Software engineering">Software engineering</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">A little about yourself</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              placeholder="What would you like to learn or build?"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary">
+            Prepare my introduction ↗
+          </button>
+
+          <p class="form-message" id="form-message" role="status"></p>
+        </form>
+
+      </div>
+    </section>
+
   </main>
 
-  <!-- Shared BuildLab footer -->
-  <footer class="bl-footer">
-    <div class="bl-container bl-footer__grid">
-      <div class="bl-footer__brand">
-        <img src="assets/images/BUILD LAB LOGO.png" alt="BuildLab">
-        <p>A practical community for people who make software.</p>
-      </div>
-
-      <div class="bl-footer__links">
-        <p class="bl-footer__label">Explore</p>
-        <a href="index.html">Home</a>
-        <a href="about.html" aria-current="page">About</a>
-        <a href="projects.html">Projects</a>
-        <a href="team.html">Team</a>
-        <a href="join.html">Join</a>
-      </div>
-
-      <div class="bl-footer__cta">
-        <p class="bl-footer__label">Have an idea worth building?</p>
-        <a href="join.html">Bring it to the lab <span aria-hidden="true">↗</span></a>
-      </div>
-    </div>
-
-    <div class="bl-container bl-footer__bottom">
-      <span>© 2026 BuildLab.</span>
-      <span>Learn Together. Build Together.</span>
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-content">
+      <p>© <span id="footer-year"></span> BuildLab. Learn. Build. Grow.</p>
+      <a href="#home">Back to top ↑</a>
     </div>
   </footer>
+
+  <script src="js/script.js"></script>
+
 </body>
 </html>
